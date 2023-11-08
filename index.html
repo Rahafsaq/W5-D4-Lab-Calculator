@@ -52,10 +52,20 @@
 			.two-button {
 				width: 15.5vw;
 			}
+			.myContainer {
+				background-color: #3b4664;
+				width: 40vw;
+				height: 91vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
+			}
 
 			@media (max-width: 600px) {
 				.calculator {
-					width: 90%; /* Use a percentage for responsiveness */
+					width: 100%; /* Use a percentage for responsiveness */
 					max-width: none; /* Remove the maximum width */
 				}
 
@@ -65,31 +75,23 @@
 				}
 
 				.mybuttons {
-					grid-template-columns: repeat(3, 1fr); /* Make the grid 3 columns wide on smaller screens */
+					width: 100%;
+					grid-template-columns: repeat(4, 1fr); /* Make the grid 3 columns wide on smaller screens */
 					gap: 5px;
 				}
 
 				button {
 					font-size: 20px;
 				}
+				#myContainer {
+					width: 100%;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<div class="all-comb" style="display: flex; justify-content: center">
-			<div
-				class="container"
-				style="
-					background-color: #3b4664;
-					width: 40vw;
-					height: 91vh;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					gap: 20px;
-				"
-			>
+			<div id="cont" class="myContainer">
 				<input type="text" id="display" readonly />
 				<div class="calculator">
 					<div class="mybuttons">
